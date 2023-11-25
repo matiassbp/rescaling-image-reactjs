@@ -36,7 +36,7 @@ const ImageResizer = () => {
             formData.append('width', width);
             formData.append('height', height);
 
-            const response = await axios.post('http://localhost:8080/resize-no-aspect-ratio', formData, {
+            const response = await axios.post('https://rescaling-image-springboot-rescaling-image-springboot.up.railway.app/resize-no-aspect-ratio', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
